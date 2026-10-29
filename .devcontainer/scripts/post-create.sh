@@ -3,6 +3,16 @@ set -euo pipefail
 
 cd /workspaces/atrium-assistant-user-docs
 
+cd /workspaces/atrium-assistant-user-docs
+
+# Initialize Git LFS
+if command -v git-lfs >/dev/null 2>&1; then
+    git lfs install
+else
+    echo "ERROR: Git LFS is not installed." >&2
+    exit 1
+fi
+
 # --- Node via nvm ---
 NODE_VERSION="20.14.0"
 

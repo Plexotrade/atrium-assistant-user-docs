@@ -14,7 +14,7 @@ RUN apt-get update \
     build-essential pkg-config \
     python3 python3-pip python3-venv python3-dev \
     gettext \
-    git unzip \
+    git git-lfs unzip \
     libpq-dev \
  && rm -rf /var/lib/apt/lists/*
 
