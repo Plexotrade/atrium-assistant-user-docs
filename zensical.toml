@@ -1,0 +1,150 @@
+# ============================================================
+# ATRIUM ASSISTANT DEVELOPER DOCUMENTATION
+# Zensical configuration
+# ============================================================
+
+[project]
+site_name = "Atrium Assistant"
+site_description = "Technical documentation for the architecture, installation, security, networking, operations, and development of Atrium Assistant."
+site_author = "Frank Arellano"
+
+docs_dir = "docs"
+site_dir = "site"
+use_directory_urls = false
+
+copyright = """
+&copy; 2026 by <a href="https://github.com/plexosoft" target="_blank" rel="noopener">Frank Arellano</a>
+"""
+
+# Set this to your actual published documentation URL before
+# enabling instant navigation.
+# site_url = "https://your-documentation-domain.example/"
+
+# ============================================================
+# EXTRA JAVASCRIPT
+# ============================================================
+
+extra_javascript = [
+  "javascripts/mathjax.js",
+  "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+]
+
+# ============================================================
+# NAVIGATION
+# ============================================================
+
+nav = [
+  "index.md",
+]
+
+# ============================================================
+# THEME
+# ============================================================
+
+[project.theme]
+variant = "modern"
+language = "en"
+
+features = [
+    "navigation.instant",
+    "navigation.instant.prefetch",
+    "navigation.instant.progress",
+  "navigation.tabs",
+  "navigation.tabs.sticky",
+  "navigation.sections",
+  "navigation.indexes",
+  "navigation.path",
+  "navigation.tracking",
+  "navigation.top",
+  "toc.follow",
+  
+
+  "search.suggest",
+  "search.highlight",
+
+  "content.tabs.link",
+  "content.code.copy",
+  "content.code.annotate",
+]
+
+# ============================================================
+# LIGHT MODE
+# ============================================================
+
+[[project.theme.palette]]
+scheme = "default"
+primary = "pink"
+accent = "deep purple"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to dark mode"
+
+# ============================================================
+# DARK MODE
+# ============================================================
+
+[[project.theme.palette]]
+scheme = "slate"
+primary = "pink"
+accent = "deep purple"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to light mode"
+
+# ============================================================
+# SOCIAL LINKS
+# ============================================================
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/plexosoft"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/twitter"
+link = "https://twitter.com/plexosoft"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/linkedin"
+link = "https://www.linkedin.com/in/arellanofrank/"
+
+# ============================================================
+# PLUGINS
+# ============================================================
+
+[project.plugins.offline]
+
+# ============================================================
+# MARKDOWN EXTENSIONS
+# ============================================================
+
+[project.markdown_extensions]
+tables = {}
+admonition = {}
+footnotes = {}
+attr_list = {}
+md_in_html = {}
+
+pymdownx.inlinehilite = {}
+pymdownx.snippets = {}
+pymdownx.superfences = {}
+pymdownx.details = {}
+pymdownx.mark = {}
+pymdownx.critic = {}
+pymdownx.caret = {}
+pymdownx.keys = {}
+pymdownx.tilde = {}
+
+# Code highlighting
+[project.markdown_extensions.pymdownx.highlight]
+anchor_linenums = true
+
+# Mathematical notation
+[project.markdown_extensions.pymdownx.arithmatex]
+generic = true
+
+# Content tabs
+[project.markdown_extensions.pymdownx.tabbed]
+alternate_style = true
+
+# Emoji and icons
+[project.markdown_extensions.pymdownx.emoji]
+emoji_index = "zensical.extensions.emoji.twemoji"
+emoji_generator = "zensical.extensions.emoji.to_svg"

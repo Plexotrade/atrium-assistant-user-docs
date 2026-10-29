@@ -1,0 +1,14 @@
+asgiref==3.13.0
+click==8.5.0
+deepmerge==4.0.0
+Django==6.1.2
+Jinja2==3.1.6
+Markdown==3.11.2
+MarkupSafe==3.0.4
+pathspec==1.1.1
+Pygments==2.21.0
+pymdown-extensions==12.3
+PyYAML==6.0.3
+sqlparse==0.6.0
+tomli==2.5.0
+zensical==0.0.73
