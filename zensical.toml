@@ -5,6 +5,7 @@
 
 [project]
 site_name = "Atrium Assistant"
+site_url = ""
 site_description = "Technical documentation for the architecture, installation, security, networking, operations, and development of Atrium Assistant."
 site_author = "Frank Arellano"
 
